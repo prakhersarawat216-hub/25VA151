@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Layout</title>
+    <style>
+        body{margin: 0;
+        padding: 0}
+        html,*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+        main{
+            width: 1200px;
+            height: 1000px;
+            background-color: #999;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+        }
+        header, nav, footer{
+           height: 130px;
+           background-color: #CCC; line-height: 150px;
+        }
+        section{
+            height: 400px;
+            background-color: aliceblue;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+        }
+        #left{
+            flex-grow: 2;
+            background-color: bisque;
+        }
+        #right{
+            flex-grow: 1;
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #rgt_top, #rgt_btm{
+            height: 200px;
+            background-color: #b24040; line-height: 200px;
+        }
+       
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <header><h2>Header</h2></header>
+
+        <nav><h2>Nav</h2></nav>
+
+        <section>
+         <div id="left">
+            <div id="page"><h2>#Page Title</h2></div>
+            <div id="content01"><h2>#Content 02</h2></div>
+            <div id="content">
+                <div class="cont_box"><h2>#Content02</h2></div>
+                <div class="cont_box"><h2>#Content 03</h2></div>
+
+            </div>
+         </div>
+         <div id="right">
+            <div id="rgt_top"><h2>Right Top</h2></div>
+            <div id="rgt_btm"><h2>Right Bottom</h2></div>
+         </div>    
+        </section>
+
+        <footer><h2>Footer</h2></footer>
+    </main>
+</body>
+</html>

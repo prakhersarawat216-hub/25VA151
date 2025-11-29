@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+    background-image: url("23831.jpg");
+    background-position: top left;
+    background-repeat: no-repeat;
+     background-size: auto; 
+}
+
+p{
+    font-family: Arial;
+    font-size: 30px;
+    color: orange;
+    font-weight: 700;
+    font-style: initial;
+    text-align: center;
+    text-decoration:line-through;
+    text-transform: lowercase;
+    text-shadow: 2px 5px 10px blue;
+
+}
+#para{
+    color: brown;
+    display: inline-block;
+    text-align: center;
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    float: left;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        body{
+            margin:0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        html,*{
+            width: 20px;
+            height: 50px;
+        }
+     
+     
+     #main{
+        width: 500px;
+        height: 400px;
+        background-color: brown;
+        margin: 0 auto;
+        border: 5px;
+        display: flex;
+     }
+     #left{
+        width: 100px;
+        height: 400px;
+        background-color: aqua;
+     }
+     #right{
+        width: 400px;
+        height: 300px;
+        background-color: blueviolet;
+     }
+     .rgt_box{
+        width: 100px;
+        height: 120px;
+        background-color: blue;
+     }
+     .rgt_box:nth-child(1){
+        margin-bottom: 60px;
+     }
+    </style>
+    
+</head>
+<body>
+    <!--main box-->
+    <div id="main">
+        <!--left box-->
+        <div id="left">
+
+        </div>
+        <!--right box-->
+        <div id="right">
+            <!--.rgt_box-->
+            <div id=".rht_box"></div>
+            <!--.rgt_box-->
+            <div id=".rgt_box:nth-child(1)"
+        </div>
+    </div>
+</body>
+</html>
