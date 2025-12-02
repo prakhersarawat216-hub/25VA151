@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid layout</title>
+    <style>
+        body{
+            margin: 0;
+           padding: 0;
+        }
+     html,*{
+        margin: 0;
+        padding: 0;
+       box-sizing: border-box;
+     }
+     main{
+          display: grid;
+        /*  grid-template-columns: repeat(5,1fr); */
+          grid-template-rows: 100px 50px  300px 120px 80px;
+          gap: 10px;
+     }
+     #right{
+        background-color: #ccc;
+     }
+     .box{
+        background-color: rgb(240, 240, 240);
+       /* height: 200px; */
+     }
+     .section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+     }
+     #left{
+        display: grid;
+        grid-template-rows: 80px auto;
+        gap: 10px;
+     }
+     article,aside{
+        background-color: #ccc;
+     }
+    </style>
+</head>
+<body>
+    <main>
+
+        <div class="box"><h2>Header</h2></div>
+        <div class="box"><h2>Nav</h2></div>
+        <div class="section">
+            <div id="left">
+           <article><h2>Article</h2></article>
+           <aside><h2>Aside</h2></aside>
+            </div>
+            <div id="right"><h2>Right</h2></div>
+            </div>
+        <div class="box"><h2>Article</h2></div>
+        <div class="box"><h2>Footer</h2></div>
+         
+        
+    </main>
+</body>
+</html>
